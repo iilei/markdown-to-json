@@ -1,30 +1,21 @@
 {
-  "name": "markdown-to-json",
+  "name": "section-matter-markdown-to-json",
   "version": "0.5.1",
-  "description": "Extracts YAML front matter from markdown files to a single JSON string or file.",
-  "author": {
-    "name": "Scott Stanfield",
-    "email": "scottstanfield@gmail.com"
-  },
-  "contributors": [
-    {
-      "name": "Capi Etheriel",
-      "email": "barraponto@gmail.com"
-    }
-  ],
+  "description": "Extracts YAML section matter from markdown files to a single JSON string or file.",
   "keywords": [
     "yaml",
     "markdown",
-    "json"
+    "json",
+    "section-matter"
   ],
-  "main": "./lib/m2j.js",
+  "main": "./lib/sm2j.js",
   "scripts": {
-    "test": "TZ='America/Tijuana' mocha -u bdd"
+    "test": "TZ='America/Tijuana' mocha -u bdd",
+    "lint": "eslint "
   },
   "bin": {
-    "m2j": "./bin/m2j"
+    "sm2j": "./bin/sm2j"
   },
-  "repository": "git://github.com/scottstanfield/markdown-to-json",
   "engines": {
     "node": "*"
   },
@@ -36,8 +27,9 @@
     "yaml-front-matter": "^3.4.0"
   },
   "devDependencies": {
-    "eslint": "^3.15.0",
-    "eslint-config-google": "^0.7.1",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-plugin-import": "^2.7.0",
     "glob": "*",
     "mocha": "*",
     "should": "*"

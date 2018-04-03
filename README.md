@@ -4,7 +4,7 @@
 
 Tool for converting YAML Front Matter in Markdown files to JSON files.
 
-`m2j` is used to read a folder of Markdown files, pulling out the YAML
+`sm2j` is used to read a folder of Markdown files, pulling out the YAML
 Front Matter from each, and saving it all as a JSON blob.
 
 This is especially useful if you have a folder full of Markdown files
@@ -22,9 +22,9 @@ In addition to moving the YAML to JSON, a few extra elements are created:
 _Example_
 
 ```
-% m2j --help
+% sm2j --help
 
-  Usage: m2j [options] <files>
+  Usage: sm2j [options] <files>
 
   Options:
 
@@ -36,7 +36,7 @@ _Example_
     -o --outfile <filename>  filename to save json to [output.json]
 
 
-% m2j.js lottery.md
+% sm2j.js lottery.md
 ```
 
 **lottery.md**
