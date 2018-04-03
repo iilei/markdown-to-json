@@ -1,0 +1,25 @@
+---
+  extends:
+    - airbnb-base
+  root: true
+  parser: "babel-eslint"
+  globals:
+    process: false
+    appConfig: false
+    React: false
+  env:
+    browser: true
+    mocha: true
+    es6: true
+  rules:
+    no-underscore-dangle:
+      - error
+      - allow:
+        - _basename
+        - _metadata
+        - __content
+        - __set__
+        - __Rewire__
+    no-unused-vars:
+      - error
+      - varsIgnorePattern: "should|expect"
